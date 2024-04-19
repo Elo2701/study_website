@@ -1,4 +1,6 @@
 
+/* Add this if you haven't included FontAwesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 header{
   background-color:gray;
 }
@@ -36,20 +38,6 @@ a:hover {
   text-decoration: none;
   color: #4e4e4e;
 }
-
-/*.box-shadow,
-.card-blog,
-.work-box,
-.service-box,
-.paralax-mf {
-box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
-}
-
-.box-shadow-a,
-.button:hover {
-  text-decoration: none;
-  box-shadow: 0 0 0 4px #cde1f8;
-}*/
 
 .display-5 {
   font-size: 2.5rem;
@@ -112,20 +100,20 @@ box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
   display: table-cell;
   vertical-align: middle;
 }
+
 .navbar {
   padding: 0;
-  position: absolute;
-  top: 16px; /* Adjust the top distance as needed */
-  right: 0;
+ 
 }
-
 .navbar ul {
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
   align-items: center;
+  justify-content: flex-end; 
 }
+
 
 .navbar li {
   position: relative;
@@ -650,7 +638,60 @@ animation: typing 6s steps(20, end) infinite forwards;
   }
 
 }
+.close-icon {
+  display: block; /* Set close icon to display initially */
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  cursor: pointer;
+  color:white;
+  top: 15px;
+  right: 10px;
+  width: 40px;  /* Adjust width as needed */
+  height: 40px;  /* Adjust height as needed */
+  font-size: 30px;  /* Adjust font size as needed */
+}
+/*papers*/
+ /* Style for the buttons */
+ .button-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  margin-top: 50px;
+  width: 80%; /* Set the width to 80% of the parent container */
+  max-width: 1200px; /* Set a maximum width for larger screens */
+}
 
-/* Add this if you haven't included FontAwesome */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+.button {
+  padding: 15px 30px; /* Increase padding for larger buttons */
+  margin-bottom: 15px; /* Increase margin between buttons */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px; /* Increase border radius for smoother corners */
+  cursor: pointer;
+  font-size: 18px; /* Increase font size */
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .button-container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    padding: 12px 25px; /* Further adjust padding for smaller screens */
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+
 
